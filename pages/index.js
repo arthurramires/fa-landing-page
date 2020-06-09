@@ -4,6 +4,8 @@ import Router from 'next/router';
 import Header from '../components/Header';
 import Description from '../components/Description';
 import Footer from '../components/Footer';
+import { Form } from '@unform/web';
+import Input from '../components/Input';
 import fetch from 'isomorphic-unfetch'
 
 
@@ -13,49 +15,37 @@ const ImageBackground = () => (
   </div>
 );
 
-export default () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: ''
-  });
-
-  function handleInputChange(event){
-    const { name, value } = event.target;
-    setFormData({
-        ...formData, [name]: value
-    });
-    console.log(name, value)
-}
-
-  async function handleSubmit(e){
-    e.preventDefault();
-    Router.push('/salutation/congrats');
-    // try {
-    //   const response = await fetch('http://localhost:3000/users', {
-    //     method: 'POST',
-    //     body: {
-    //       name,
-    //       email
-    //     }
-    //   });
-    //   console.log(response)
-    //   Router.push('/salutation/congrats');
-    // }catch (err){
-    //   console.log(err)
-    // }
+const Home = () => {
+  async function handleSubmit(data){
+    try {
+      fetch('http://localhost:3333/users', {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        },
+      }).then(function(response) {
+        console.log(response)
+      }, function(error) {
+        error.message 
+      });
+      Router.push('/salutation/congrats');
+    }catch (err){
+      alert("Aconteceu um erro, tente novamente!!")
+    }
 
   }
 
   const Content = () => (
     <div className="flex flex-wrap">
       <p className="content">Seja um dos primeiros a utilizar o <strong className="content-title">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
-      <form className="inputContainer flex flex-col" onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="inputContainer flex flex-col">
         <label htmlFor="nome" className="inputLabel">Insira seu nome :)</label>
-        <input type="text" name="name" id="name" />
+        <Input name="name" type="text" className="input"/>
         <label htmlFor="email" className="inputLabel">Insira seu email :)</label>
-        <input type="email" name="email" id="email"/>
+        <Input name="email" type="email" />
         <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
-      </form>
+      </Form>
     </div>
   );
   return (
@@ -101,3 +91,5 @@ export default () => {
     </>
   );
 };
+
+export default Home;
