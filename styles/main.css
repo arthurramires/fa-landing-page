@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply h-screen;
+}
+
+* {
+    font-family: 'Marriweather' sans-serif;
+}
+
+body {
+    background: #F7F6F4;
+}
+
+body #__next .container .content {
+  width: 517px;
+  margin-top: 120px;
+  text-align: left;
+  font: Bold 30px Merriweather;
+  letter-spacing: 0px;
+  color: #544B4B;
+}
+
+body #__next .container .info .description {
+  width: 517px;
+  margin-top: 120px;
+  text-align: left;
+  font: Bold 30px Roboto;
+  letter-spacing: 0px;
+  color: #544B4B;
+}
+
+body #__next .container .info .info-description {
+  margin-top: 20px;
+  width: 517px;
+  text-align: left;
+  font: 19px Roboto;
+  letter-spacing: 0px;
+  color: #544B4B;
+}
+
+body #__next .container .info .description .description-title {
+  font: Bold 30px Architects Daughter;
+  letter-spacing: 0px;
+  color: #8403B2;
+}
+
+body #__next .container .inputContainer {
+  margin-top: 30px;
+}
+
+body #__next .container .inputContainer .inputLabel{
+  margin-top: 8px;
+  font: 18px Merriweather;
+  letter-spacing: 0px;
+  color: #544B4B;
+}
+
+body #__next .container .inputContainer .formButton {
+  width: 517px;
+  margin-top: 15px;
+  height: 48px;
+  background: #7D46DF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 5px;
+  font: 20px Roboto;
+  color: #FFFFFF;
+}
+
+body #__next .container .message {
+  width: 386px;
+  margin-top: 15px;
+  height: 70px;
+  background: #7D46DF;
+  opacity: 1;
+  padding: 5px;
+  border-radius: 5px;
+  font: 20px Roboto;
+  color: #FFFFFF;
+}
+
+body #__next .container .message .message-content {
+  height: 57px;
+  background: transparent;
+  padding: 5px;
+  align-items: center;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  font: 20px Roboto;
+}
+
+body #__next .container .content .content-title {
+  font: Bold 30px Architects Daughter;
+  letter-spacing: 0px;
+  color: #8403B2;
+}
+
+input {
+  width: 517px;
+  height: 40px;
+  background: #C9C9C9 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  opacity: 1;
+  padding-left: 16px;
+}
+
+body #__next .footer {
+  height: 153px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  margin-top: 30px;
+  padding-left: 40px;
+  align-items: center;
+  font: 16px Merriweather;
+  letter-spacing: 0px;
+  color: #8403B2;
+}
+
+body #__next .footer-media {
+  height: 153px;
+  background: #F7F6F4;
+  margin-top: 30px;
+  padding-left: 40px;
+  align-items: flex-start;
+  font: 16px Merriweather;
+  letter-spacing: 0px;
+  color: #8403B2;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+body #__next .container .footer-image{
+  margin-top: 82px;
+  margin-left: 740px;
+}
+
