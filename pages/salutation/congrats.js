@@ -39,9 +39,9 @@ const Congrats = () => {
                 </div>
             </div>
             <img className="flex sm:hidden mt-8 ml-24 mr-6" src="/congrats.png" alt="Cidade" width={400} />
-            <img src="/style-bar.PNG" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-12 ml-64"/> 
+            <img src="/stylebar.png" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-12 ml-64"/> 
             <div className="flex justify-end hidden sm:flex mt-12">
-                <img src="/style-bar.PNG" alt="Barras" width={800}/>
+                <img src="/stylebar.png" alt="Barras" width={800}/>
             </div>
             <div className="container pl-3 mt-12 sm:pr-6 px-6 md:pb-4 mx-auto flex flex-row">
                 <Description />

@@ -100,12 +100,19 @@ body #__next .container .content .content-title {
 
 input {
   width: 517px;
-  height: 40px;
+  height: 50px;
   background: #C9C9C9 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 5px;
   opacity: 1;
   padding-left: 16px;
+  color: #3F4851;
+  margin-top: 15px;
+}
+
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3F4851;
 }
 
 body #__next .footer {

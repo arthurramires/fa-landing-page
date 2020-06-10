@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head'
 import Router from 'next/router';
 import Header from '../components/Header';
@@ -40,10 +40,8 @@ const Home = () => {
     <div className="flex flex-wrap">
       <p className="content">Seja um dos primeiros a utilizar o <strong className="content-title">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
       <Form onSubmit={handleSubmit} className="inputContainer flex flex-col">
-        <label htmlFor="nome" className="inputLabel">Insira seu nome :)</label>
-        <Input name="name" type="text" className="input"/>
-        <label htmlFor="email" className="inputLabel">Insira seu email :)</label>
-        <Input name="email" type="email" />
+        <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui. ;)"/>
+        <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui. ;)"/>
         <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
       </Form>
     </div>
@@ -64,9 +62,9 @@ const Home = () => {
         </div>
       </div>
       <img className="flex sm:hidden mt-8 ml-24 mr-6" src="/main.png" alt="Cidade" width={400} />
-      <img src="/style-bar.PNG" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-12 ml-64"/> 
+      <img src="/stylebar.png" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-12 ml-64"/> 
       <div className="flex justify-end hidden sm:flex mt-12 ">
-        <img src="/style-bar.PNG" alt="Barras" width={800}/>
+        <img src="/stylebar.png" alt="Barras" width={800}/>
       </div>
       <div className="container pl-3 mt-12 sm:pr-6 px-6 md:pb-4 mx-auto flex flex-row">
         <Description />
