@@ -14,6 +14,11 @@ body {
 body {
     background: #F7F6F4;
 }
+body #__next {
+  width: 100%;
+  border-top: 7px solid #8403B2;
+}
+
 
 body #__next .container .content {
   width: 517px;
@@ -26,11 +31,11 @@ body #__next .container .content {
 
 body #__next .container .info .description {
   width: 517px;
-  margin-top: 120px;
+  margin-top: 180px;
   text-align: left;
-  font: Bold 30px Roboto;
+  font: Bold 33px Roboto;
   letter-spacing: 0px;
-  color: #544B4B;
+  color: #000;
 }
 
 body #__next .container .info .info-description {
@@ -39,7 +44,7 @@ body #__next .container .info .info-description {
   text-align: left;
   font: 19px Roboto;
   letter-spacing: 0px;
-  color: #544B4B;
+  color: #000;
 }
 
 body #__next .container .info .description .description-title {
@@ -62,12 +67,17 @@ body #__next .container .inputContainer .inputLabel{
 body #__next .container .inputContainer .formButton {
   width: 517px;
   margin-top: 15px;
-  height: 48px;
+  height: 53px;
   background: #7D46DF 0% 0% no-repeat padding-box;
   opacity: 1;
   border-radius: 5px;
-  font: 20px Roboto;
+  font: 21px Roboto;
   color: #FFFFFF;
+  transition: opacity 1s;
+}
+
+body #__next .container .inputContainer .formButton:hover {
+  opacity: 0.5;
 }
 
 body #__next .container .message {
@@ -102,29 +112,38 @@ input {
   width: 517px;
   height: 50px;
   background: #C9C9C9 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  border: 0.5px solid #707070;
   border-radius: 5px;
   opacity: 1;
   padding-left: 16px;
   color: #3F4851;
-  margin-top: 15px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none !important;
+  border:1px solid #3F4851;
 }
 
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #3F4851;
+  align-self: center;
 }
 
 body #__next .footer {
-  height: 153px;
+  height: 120px;
   background: #FFFFFF;
   border: 1px solid #707070;
   margin-top: 30px;
   padding-left: 40px;
   align-items: center;
-  font: 16px Merriweather;
+  font: 16px Roboto;
   letter-spacing: 0px;
   color: #8403B2;
+  position: relative;
+  padding-right: 600px;
 }
 
 body #__next .footer-media {
@@ -133,15 +152,22 @@ body #__next .footer-media {
   margin-top: 30px;
   padding-left: 40px;
   align-items: flex-start;
-  font: 16px Merriweather;
+  font: 16px Roboto;
   letter-spacing: 0px;
   color: #8403B2;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
 }
-body #__next .container .footer-image{
-  margin-top: 82px;
-  margin-left: 740px;
+
+body #__next .footer-media .image-container{
+ width: 400px;
+}
+body #__next  .footer .footer-image{
+  bottom: 100px;
+  padding: 0;
+  position: absolute;
+  margin-left: 730px;
+  bottom: 64px;
 }
 

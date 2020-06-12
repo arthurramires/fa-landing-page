@@ -1,7 +1,7 @@
 const Header = () => (
-    <div className="max-w-md">
+    <header className="max-w-md">
       <img src="/logo.png" alt="Fidelize Mais"  width={281}  />
-    </div>
+    </header>
 );
 
 export default Header;
