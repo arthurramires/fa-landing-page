@@ -56,7 +56,7 @@ body #__next .container .info .description .description-title {
 }
 
 body #__next .container .inputContainer {
-  margin-top: -30px;
+  margin-top: 5px;
 }
 
 body #__next .container .inputContainer .inputLabel{
