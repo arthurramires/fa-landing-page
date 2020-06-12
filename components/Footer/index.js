@@ -12,7 +12,7 @@ const Footer = () => (
         <img src="/facebook.svg" alt="facebook" />
         <a href="" className="ml-3 mr-9">Fidelizemais</a>
       </div> 
-      <img className="footer-image hidden sm:inline-block" src="/city1.png" alt="Cidade" width={600} />
+      <img className="footer-image hidden sm:inline-block md:flex" src="/city1.png" alt="Cidade" width={600} />
     </footer>
 );
 
