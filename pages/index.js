@@ -9,13 +9,6 @@ import Input from '../components/Input';
 import fetch from 'isomorphic-unfetch';
 
 
-
-const ImageBackground = () => (
-  <div className="ml-12 mb-12">
-    <img src="/main.png" alt="Fidelize Mais" width={1000} />
-  </div>
-);
-
 const Home = () => {
   async function handleSubmit(data){
     try {
@@ -38,6 +31,13 @@ const Home = () => {
 
   }
 
+  const ImageBackground = () => (
+    <aside className="ml-12 mb-12">
+      <img src="/main.png" alt="Fidelize Mais" width={950} className="hidden lg:hidden xl:flex"/>
+      <img src="/main.png" alt="Fidelize Mais" width={400} className="p-8 lg:flex xl:hidden"/>
+    </aside>
+  );
+
   const Content = () => (
     <section className="flex flex-wrap mr-32">
       <p className="content">Seja um dos primeiros a utilizar o <strong className="content-title">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
@@ -53,7 +53,7 @@ const Home = () => {
       <div className="container p-8 mx-auto sm:p-12">
         <Head>
           <title>Fidelize Mais</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/icon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
         </Head>
@@ -64,7 +64,6 @@ const Home = () => {
           <Content />
           <ImageBackground />
         </aside>
-
       </div>
       
       <img className="flex sm:hidden mt-8 ml-24 mr-6" src="/main.png" alt="Cidade" width={400} />
@@ -90,7 +89,7 @@ const Home = () => {
           <img src="/instagram.svg" alt="instagram" />
           <a href="https://www.instagram.com/fidelizemais/" className="ml-3 mr-9">@fidelizemais</a>
         </div>
-        
+
         <div className="flex items-center">
           <img src="/facebook.svg" alt="facebook" />
           <p className="ml-3 mr-9">Fidelizemais</p>
