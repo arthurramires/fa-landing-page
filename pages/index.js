@@ -33,7 +33,7 @@ const Home = () => {
 
   const ImageBackground = () => (
     <aside className="ml-12 mb-12">
-      <img src="/main.png" alt="Fidelize Mais" width={950} className="hidden lg:hidden xl:flex"/>
+      <img src="/main.png" alt="Fidelize Mais" width={900} className="hidden lg:hidden xl:flex"/>
       <img src="/main.png" alt="Fidelize Mais" width={400} className="p-8 lg:flex xl:hidden"/>
     </aside>
   );
@@ -67,13 +67,13 @@ const Home = () => {
       </div>
       
       <img className="flex sm:hidden mt-8 ml-24 mr-6" src="/main.png" alt="Cidade" width={400} />
-      <img src="/stylebar.png" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-12 ml-64"/> 
+      <img src="/stylebar.png" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-2 ml-64"/> 
       
       <div className="flex justify-end hidden sm:flex mt-0">
         <img src="/stylebar.png" alt="Barras" width={700}/>
       </div>
 
-      <section className="container pl-3 mt-12 sm:pr-6 px-6 md:pb-4 mx-auto flex flex-row">
+      <section className="container pl-3 sm:pr-6 px-6 md:pb-4 mx-auto flex flex-row">
         <Description />
       </section>
 

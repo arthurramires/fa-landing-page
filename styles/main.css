@@ -16,7 +16,7 @@ body {
 }
 body #__next {
   width: 100%;
-  border-top: 7px solid #8403B2;
+  border-top: 5px solid #8403B2;
 }
 
 
@@ -27,11 +27,13 @@ body #__next .container .content {
   font: Bold 30px Merriweather;
   letter-spacing: 0px;
   color: #544B4B;
+  padding-right: 30px;
+  margin-right: 20px;
 }
 
 body #__next .container .info .description {
   width: 517px;
-  margin-top: 180px;
+  margin-top: 100px;
   text-align: left;
   font: Bold 33px Roboto;
   letter-spacing: 0px;
@@ -54,7 +56,7 @@ body #__next .container .info .description .description-title {
 }
 
 body #__next .container .inputContainer {
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 body #__next .container .inputContainer .inputLabel{
@@ -66,7 +68,7 @@ body #__next .container .inputContainer .inputLabel{
 
 body #__next .container .inputContainer .formButton {
   width: 517px;
-  margin-top: 15px;
+  margin-top: 8px;
   height: 53px;
   background: #7D46DF 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -143,7 +145,7 @@ body #__next .footer {
   letter-spacing: 0px;
   color: #8403B2;
   position: relative;
-  padding-right: 650px;
+  padding-right: 700px;
 }
 
 body #__next .footer-media {
