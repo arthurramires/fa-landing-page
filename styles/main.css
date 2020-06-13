@@ -8,66 +8,80 @@ body {
 }
 
 * {
-    font-family: 'Marriweather' sans-serif;
+   padding: 0;
+   margin: 0;
+   outline: 0;
+   box-sizing: border-box;
 }
 
 body {
     background: #F7F6F4;
+    /* background: blue; */
 }
 body #__next {
-  width: 100%;
   border-top: 5px solid #8403B2;
 }
 
+body #__next .container  {
+  /* background: greenyellow; */
+  width: 100%;
+}
 
 body #__next .container .content {
-  width: 517px;
-  margin-top: 120px;
-  text-align: left;
-  font: Bold 30px Merriweather;
+  width: 100%;
+  font-weight: Bold;
+  font-family: Merriweather;
   letter-spacing: 0px;
-  color: #544B4B;
-  padding-right: 30px;
-  margin-right: 20px;
+  color: #544B4B;  
 }
 
-body #__next .container .info .description {
-  width: 517px;
-  margin-top: 100px;
-  text-align: left;
-  font: Bold 33px Roboto;
-  letter-spacing: 0px;
-  color: #000;
+
+body #__next .container .banner {
+  min-width: 300px;
 }
 
-body #__next .container .info .info-description {
-  margin-top: 20px;
-  width: 517px;
-  text-align: left;
-  font: 19px Roboto;
-  letter-spacing: 0px;
-  color: #000;
+body #__next .container .info {
+  margin-top: 160px;
+  width: 100%;
 }
 
-body #__next .container .info .description .description-title {
-  font: Bold 30px Architects Daughter;
+body #__next .info .description {
+  width: 100%;
+  font-weight: Bold;
+  font-size: 30px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #000; 
+}
+
+body #__next .info .info-description {
+  width: 100%;
+  font-size: 19px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #000; 
+}
+
+body #__next .info .description .description-title {
+  font-weight: Bold;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
   color: #8403B2;
 }
 
 body #__next .container .inputContainer {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 body #__next .container .inputContainer .inputLabel{
   margin-top: 8px;
-  font: 18px Merriweather;
+  font: 1.8rem Merriweather;
   letter-spacing: 0px;
   color: #544B4B;
 }
 
 body #__next .container .inputContainer .formButton {
-  width: 517px;
+  width: 100%;
   margin-top: 8px;
   height: 53px;
   background: #7D46DF 0% 0% no-repeat padding-box;
@@ -105,13 +119,15 @@ body #__next .container .message .message-content {
 }
 
 body #__next .container .content .content-title {
-  font: Bold 30px Architects Daughter;
+  font-weight: bold;
+  font-family: Architects Daughter;
+  font-size: 30px;
   letter-spacing: 0px;
   color: #8403B2;
 }
 
 input {
-  width: 517px;
+  width: 100%;
   height: 50px;
   background: #C9C9C9 0% 0% no-repeat padding-box;
   border: 0.5px solid #707070;
@@ -121,6 +137,7 @@ input {
   color: #3F4851;
   margin-top: 8px;
   text-align: center;
+  min-width: 300px;
 }
 
 input:focus {
@@ -145,7 +162,7 @@ body #__next .footer {
   letter-spacing: 0px;
   color: #8403B2;
   position: relative;
-  padding-right: 700px;
+  width: 100%;
 }
 
 body #__next .footer-media {
@@ -169,7 +186,7 @@ body #__next  .footer .footer-image{
   bottom: 100px;
   padding: 0;
   position: absolute;
-  right: 40px;
+  right: 20px;
   bottom: 60px;
 }
 

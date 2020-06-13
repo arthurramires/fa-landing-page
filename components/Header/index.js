@@ -1,6 +1,6 @@
 const Header = () => (
-    <header className="max-w-md">
-      <img src="/logo.png" alt="Fidelize Mais"  width={281}  />
+    <header className="flex justify-center xl:ml-32 mt-16 lg:ml-10 md:ml-8 sm:justify-start mx-6">
+      <img src="/logo.png" alt="Fidelize Mais" />
     </header>
 );
 

@@ -31,26 +31,25 @@ const Home = () => {
 
   }
 
-  const ImageBackground = () => (
-    <aside className="ml-12 mb-12">
-      <img src="/main.png" alt="Fidelize Mais" width={900} className="hidden lg:hidden xl:flex"/>
-      <img src="/main.png" alt="Fidelize Mais" width={400} className="p-8 lg:flex xl:hidden"/>
-    </aside>
-  );
-
   const Content = () => (
-    <section className="flex flex-wrap mr-32">
-      <p className="content">Seja um dos primeiros a utilizar o <strong className="content-title">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
-      <Form onSubmit={handleSubmit} className="inputContainer flex flex-col">
-        <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
-        <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui ;)"/>
-        <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
-      </Form>
-    </section>
+    <div className="flex flex-col sm:flex-row">
+      <section className="flex flex-col flex-center pr-2 xl:ml-32 mt-16 lg:ml-10 md:ml-8 sm:flex-start pr-0 mx-6">
+        <p className="content w-full ml-3 mr-6 text-base text-center sm:text-left ml-0 mr-3 text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
+        <Form onSubmit={handleSubmit} className="inputContainer flex flex-col px-3">
+          <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
+          <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui ;)"/>
+          <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
+        </Form>
+      </section>
+      <aside className="min-w-0 mt-3 ml-0 px-12 mt-6 sm:ml-16 px-0 mt-0 lg:ml-6 min-w-0 px-0 mt-0 md:ml-3 px-0 mt-0 ">
+        <img src="/main.png" alt="Fidelize Mais" width={1000} className="banner"/>
+      </aside>
+    </div>
   );
   return (
     <>
-      <div className="container p-8 mx-auto sm:p-12">
+      <Header />
+      <div className="container">
         <Head>
           <title>Fidelize Mais</title>
           <link rel="icon" href="/icon.ico" />
@@ -58,28 +57,22 @@ const Home = () => {
           <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
         </Head>
 
-        <Header />
-
-        <aside className="flex justify-between sm:block md:block xl:flex">
+        <aside className="w-full flex justify-between">
           <Content />
-          <ImageBackground />
         </aside>
       </div>
-      
-      <img className="flex sm:hidden mt-8 ml-24 mr-6" src="/main.png" alt="Cidade" width={400} />
-      <img src="/stylebar.png" alt="Barras" width={320} className="flex justify-end  sm:hidden mt-2 ml-64"/> 
-      
-      <div className="flex justify-end hidden sm:flex mt-0">
-        <img src="/stylebar.png" alt="Barras" width={700}/>
+            
+      <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-32 pl-0 ">
+        <img src="/stylebar.png" alt="Barras" width={600}/>
       </div>
 
-      <section className="container pl-3 sm:pr-6 px-6 md:pb-4 mx-auto flex flex-row">
+      <section className="pr-0 xl:pr-64">
         <Description />
       </section>
 
       <Footer />
 
-      <footer className="footer-media flex flex-column sm:hidden">
+      <footer className="footer-media flex flex-column lg:hidden  ">
         <div className="flex items-center">
           <img src="/whatsapp.svg" alt="Whatsapp" />
           <p className="ml-3 mr-9">(65) 9 9338-5486</p>
@@ -95,7 +88,9 @@ const Home = () => {
           <p className="ml-3 mr-9">Fidelizemais</p>
         </div>
       </footer>
-      <img className="flex sm:hidden mt-8 ml-32 mb-2" src="/city1.png" alt="Cidade" width={300} />  
+      <div className="flex justify-center">
+        <img className="flex lg:hidden self-center mt-8 justify-center mb-2" src="/city1.png" alt="Cidade" width={300} />  
+      </div>
     </>
   );
 };
