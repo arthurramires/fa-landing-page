@@ -33,16 +33,16 @@ const Home = () => {
 
   const Content = () => (
     <div className="flex flex-col lg:flex-row">
-      <section className="flex flex-col mx-3 sm:justify-start lg:ml-6 xl:ml-32 mt-16">
-        <p className="content pr-3 text-base text-center sm:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
+      <section className="flex flex-col sm:justify-start lg:ml-6 w-screen xl:ml-32 mt-16">
+        <p className="content ml-3 text-base text-center sm:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
         <Form onSubmit={handleSubmit} className="inputContainer flex flex-col px-3">
           <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
           <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui ;)"/>
           <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
         </Form>
       </section>
-      <aside className="mt-3 ml-0 mt-6 px-2 sm:px-0 mt-0 lg:ml-6 px-0 mt-0 md:ml-3 px-0 mt-0 ">
-        <img src="/main.png" alt="Fidelize Mais" width={1000} className="banner"/>
+      <aside className="mt-0 ml-0 mt-6 px-2 sm:px-0 mt-0 ml-0 lg:ml-32 w-screen mt-0 md:px-0 mt-0 xl:w-full">
+        <img src="/main.png" alt="Fidelize Mais" width={1000} className=""/>
       </aside>
     </div>
   );
@@ -59,7 +59,7 @@ const Home = () => {
         <Content />
       </div>
             
-      <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-32 pl-0 ">
+      <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-24 pl-0 ">
         <img src="/stylebar.png" alt="Barras" width={600}/>
       </div>
 
