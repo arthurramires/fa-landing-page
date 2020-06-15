@@ -1,5 +1,5 @@
 const Footer = () => (
-    <footer className="footer flex flex-row justify-around hidden lg:flex pr-64">
+    <footer className="footer flex flex-row justify-around hidden lg:flex">
       <div className="flex items-center">
         <img src="/whatsapp.svg" alt="Whatsapp" />
         <p className="ml-3 mr-9">(65) 9 9338-5486</p>
@@ -12,9 +12,7 @@ const Footer = () => (
         <img src="/facebook.svg" alt="facebook" />
         <a href="" className="ml-3 mr-9">Fidelizemais</a>
       </div> 
-      <div className="hidden xl:flex ">
-        <img className="footer-image pl-7" src="/city1.png" alt="Cidade" width={500} />
-      </div>
+      <img className="footer-image hidden md:flex mb-38 p-0" src="/cidade.svg" alt="Cidade" width={460} />
     </footer>
 );
 

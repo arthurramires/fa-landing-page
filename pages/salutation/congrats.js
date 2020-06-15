@@ -50,18 +50,18 @@ const Congrats = () => {
 
             <footer className="footer-media flex flex-column lg:hidden  ">
                 <div className="flex items-center">
-                <img src="/whatsapp.svg" alt="Whatsapp" />
-                <p className="ml-3 mr-9">(65) 9 9338-5486</p>
+                    <img src="/whatsapp.svg" alt="Whatsapp" />
+                    <p className="ml-3 mr-9">(65) 9 9338-5486</p>
                 </div>
 
                 <div className="flex items-center">
-                <img src="/instagram.svg" alt="instagram" />
-                <a href="https://www.instagram.com/fidelizemais/" className="ml-3 mr-9">@fidelizemais</a>
+                    <img src="/instagram.svg" alt="instagram" />
+                    <a href="https://www.instagram.com/fidelizemais/" className="ml-3 mr-9">@fidelizemais</a>
                 </div>
 
                 <div className="flex items-center">
-                <img src="/facebook.svg" alt="facebook" />
-                <p className="ml-3 mr-9">Fidelizemais</p>
+                    <img src="/facebook.svg" alt="facebook" />
+                    <p className="ml-3 mr-9">Fidelizemais</p>
                 </div>
             </footer>
             <div className="flex justify-center">

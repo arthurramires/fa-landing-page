@@ -32,16 +32,16 @@ const Home = () => {
   }
 
   const Content = () => (
-    <div className="flex flex-col sm:flex-row">
-      <section className="flex flex-col flex-center pr-2 xl:ml-32 mt-16 lg:ml-10 md:ml-8 sm:flex-start pr-0 mx-6">
-        <p className="content w-full ml-3 mr-6 text-base text-center sm:text-left ml-0 mr-3 text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
+    <div className="flex flex-col lg:flex-row">
+      <section className="flex flex-col mx-3 sm:justify-start lg:ml-6 xl:ml-32 mt-16">
+        <p className="content pr-3 text-base text-center sm:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
         <Form onSubmit={handleSubmit} className="inputContainer flex flex-col px-3">
           <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
           <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui ;)"/>
           <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
         </Form>
       </section>
-      <aside className="min-w-0 mt-3 ml-0 px-12 mt-6 sm:ml-16 px-0 mt-0 lg:ml-6 min-w-0 px-0 mt-0 md:ml-3 px-0 mt-0 ">
+      <aside className="mt-3 ml-0 mt-6 px-2 sm:px-0 mt-0 lg:ml-6 px-0 mt-0 md:ml-3 px-0 mt-0 ">
         <img src="/main.png" alt="Fidelize Mais" width={1000} className="banner"/>
       </aside>
     </div>
@@ -56,10 +56,7 @@ const Home = () => {
           <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
         </Head>
-
-        <aside className="w-full flex justify-between">
-          <Content />
-        </aside>
+        <Content />
       </div>
             
       <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-32 pl-0 ">
