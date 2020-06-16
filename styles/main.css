@@ -27,7 +27,6 @@ body #__next .container  {
   width: 100%;
 }
 
-
 body #__next .container .content {
   font-weight: Bold;
   font-family: Merriweather;
@@ -92,7 +91,6 @@ body #__next .container .inputContainer .formButton:hover {
 }
 
 body #__next .container .message {
-  width: 386px;
   margin-top: 15px;
   height: 70px;
   background: #7D46DF;
@@ -104,6 +102,7 @@ body #__next .container .message {
 }
 
 body #__next .container .message .message-content {
+  width: 100%;
   height: 57px;
   background: transparent;
   padding: 5px;

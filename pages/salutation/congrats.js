@@ -7,17 +7,17 @@ import Footer from '../../components/Footer';
 
 
 const Content = () => (
-    <div className="flex flex-col sm:flex-row">
-      <section className="flex flex-col flex-center pr-2 xl:ml-32 mt-16 lg:ml-10 md:ml-8 sm:flex-start pr-0 mx-6">
-        <p className="content w-full mr-6 text-base text-center sm:text-left ml-0 text-lg md:text-xl lg:text-2xl xl:text-3xl"><strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fique de olho em seu e-mail</strong> <br />Em breve entraremos em contato.</p>
-        <div className="message sm:justify-center">
+    <div className="flex flex-col lg:flex-row">
+      <section className="flex flex-col sm:justify-start lg:ml-6 xl:ml-32 mt-16">
+        <p className="content ml-3 w-6 text-base text-center sm:text-lg md:text-xl lg:text-left w-full text-2xl xl:text-3xl"><strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fique de olho em seu e-mail</strong> <br />Em breve entraremos em contato.</p>
+        <div className="message w-full sm:justify-center">
             <div className="message-content flex items-center justify-center">
-                <p>CADASTRO REALIZADO. ;)</p>
+                <p>CADASTRO REALIZADO ;)</p>
             </div>
         </div>
       </section>
-      <aside className="min-w-0 mt-3 ml-0 px-12 mt-6 sm:ml-16 px-0 mt-0 lg:ml-6 min-w-0 px-0 mt-0 md:ml-3 px-0 mt-0 ">
-        <img src="/congrats.png" alt="Fidelize Mais" width={700} className="banner"/>
+      <aside className="mt-0 ml-0 mt-6 px-6 sm:px-0 mt-0 ml-0 lg:px-6 w-screen mt-0 md:px-0 mt-0">
+        <img src="/congrats.png" alt="Fidelize Mais" width={900} className="banner"/>
       </aside>
     </div>
   );
@@ -33,10 +33,7 @@ const Congrats = () => {
                     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
                 </Head>
-                
-                <div className="w-full flex justify-between">
-                    <Content />
-                </div>
+                <Content />
             </div>
 
             <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-32 pl-0 ">

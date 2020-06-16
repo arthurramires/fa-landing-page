@@ -24,7 +24,6 @@ const Home = () => {
         error.message
         alert("Aconteceu um erro, tente novamente!!") 
       });
-
     }catch (err){
       alert("Aconteceu um erro, tente novamente!!")
     }
@@ -32,8 +31,8 @@ const Home = () => {
   }
 
   const Content = () => (
-    <div className="flex flex-col lg:flex-row">
-      <section className="flex flex-col sm:justify-start lg:ml-6 w-screen xl:ml-32 mt-16">
+    <div className="flex flex-col lg:flex-row pr-0">
+      <section className="flex flex-col w-screen lg:ml-6 xl:ml-32 mt-16">
         <p className="content ml-3 text-base text-center sm:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
         <Form onSubmit={handleSubmit} className="inputContainer flex flex-col px-3">
           <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
