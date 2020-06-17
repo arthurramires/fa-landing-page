@@ -31,35 +31,38 @@ const Home = () => {
   }
 
   const Content = () => (
-    <div className="flex flex-col lg:flex-row pr-0">
-      <section className="flex flex-col w-screen lg:ml-6 xl:ml-32 mt-16">
+    <div className="flex flex-col w-auto lg:flex-row pr-0 ">
+      <section className="container-text h-1/2 flex flex-col w-full px-6 sm:mt-16 px-0 lg:ml-6 xl:ml-32 w-1/2 mt-10 pl-0">
         <p className="content ml-3 text-base text-center sm:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl">Seja um dos primeiros a utilizar o <strong className="content-title text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Fidelize Mais</strong> Faça a sua inscrição e garanta essa novidade.</p>
-        <Form onSubmit={handleSubmit} className="inputContainer flex flex-col px-3">
-          <Input name="name" type="text" className="input" required placeholder="Insira seu nome aqui ;)"/>
-          <Input name="email" type="email" required  placeholder="Insira seu e-mail aqui ;)"/>
-          <button type="submit"className="formButton">FAZER MEU CADASTRO</button>
+        <Form onSubmit={handleSubmit} className="inputContainer px-4 flex flex-col">
+          <Input name="name" type="text" className="input h-1/2 sm:h-12" required placeholder="Insira seu nome aqui ;)"/>
+          <Input name="email" type="email" className="input h-1/2 sm:h-12" required  placeholder="Insira seu e-mail aqui ;)"/>
+          <button type="submit"className="formButton h-1/2 mb-2 sm:h-12">FAZER MEU CADASTRO</button>
         </Form>
       </section>
-      <aside className="mt-0 ml-0 mt-6 px-2 sm:px-0 mt-0 ml-0 lg:ml-32 w-screen mt-0 md:px-0 mt-0 xl:w-full">
-        <img src="/main.png" alt="Fidelize Mais" width={1000} className=""/>
+      <aside className="h-1/2 xl:w-1/2">
+        <img src="/main.png" alt="Fidelize Mais" width={600} className="image-main hidden sm:block"/>
+        <img src="/main.png" alt="Fidelize Mais" className="image block m-auto w-56 sm:hidden"/>
       </aside>
     </div>
   );
   return (
     <>
-      <Header />
-      <div className="container">
-        <Head>
-          <title>Fidelize Mais</title>
-          <link rel="icon" href="/icon.ico" />
-          <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
-        </Head>
-        <Content />
+      <div className="w-screen justify-center sm:h-full justify-start">
+        <Header />
+        <div className="container">
+          <Head>
+            <title>Fidelize Mais</title>
+            <link rel="icon" href="/icon.ico" />
+            <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"></link>
+          </Head>
+          <Content />
+        </div>
       </div>
             
       <div className="w-full flex pl-32 mt-4 justify-end sm:flex mt-24 pl-0 ">
-        <img src="/stylebar.png" alt="Barras" width={600}/>
+        <img src="/stylebar.png" alt="Barras"/>
       </div>
 
       <section className="pr-0 xl:pr-64">
@@ -85,7 +88,7 @@ const Home = () => {
         </div>
       </footer>
       <div className="flex justify-center">
-        <img className="flex lg:hidden self-center mt-8 justify-center mb-2" src="/city1.png" alt="Cidade" width={300} />  
+        <img className="flex lg:hidden self-center mt-8 justify-center mb-2" src="/city1.png" alt="Cidade" width={200} />  
       </div>
     </>
   );
